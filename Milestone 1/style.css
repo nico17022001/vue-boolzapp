@@ -127,7 +127,7 @@
 
 #listaContatti{
   background-color: white;
-  height: 100%;
+  height: calc(100% - 140px);
   width: 100%;
 }
 
