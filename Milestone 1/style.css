@@ -109,6 +109,8 @@
   padding: 5px 0px 5px 0px;
   height: 20px;
   cursor: pointer;
+  color: gray;
+  font-size: x-small;
 }
 
 #barraCerca {
@@ -121,4 +123,41 @@
   border: solid 0.5px lightgray;
   font-size: x-small;
   padding-left: 5px;
+}
+
+#listaContatti{
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.avatar{
+  padding-left: 5px;
+}
+
+.contatto{
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.userNameContainer{
+  padding-left: 10px;
+}
+
+.contatto{
+  display: flex;
+}
+
+.messaggioGrigio{
+  color: gray;
+  font-size: x-small;
+}
+
+.contatto:hover{
+  background-color: #e9ebeb;
+}
+
+.userName{
+  font-size: small;
 }
