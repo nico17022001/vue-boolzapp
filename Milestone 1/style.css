@@ -147,6 +147,7 @@
 
 .contatto{
   display: flex;
+  position: relative;
 }
 
 .messaggioGrigio{
@@ -205,5 +206,13 @@
 #tastiera input{
   width: 100%;
   height: 30px;
+}
+
+.oraUltimoMessaggio{
+  font-size: small;
+  color: gray;
+  position: absolute;
+  right: 5px;
+  top: 5px;
 }
 
