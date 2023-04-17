@@ -34,9 +34,60 @@
 }
 
 .topBarr{
-  height: 40px;
+  height: 50px;
   background-color: #eaeaea;
   display: flex;
   align-items: center;
-  
+  padding: 5px;
+  position: relative;
 }
+
+.avatarNome{
+  display: flex;
+  align-items: center;
+}
+
+.avatar img{
+  width: 30px;
+  border-radius: 50%;
+}
+
+.iconTopContainer{
+  display: flex;
+  position: absolute;
+  right: 5px;
+}
+
+.icon{
+  margin: 0px 4px 0px 4px;
+  color: #b1b1b1;
+}
+
+.icon:hover{
+  color: black;
+}
+
+#newsBarr{
+  background-color: #8edafc;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+#bell i{
+  background-color: #8edafc;
+  color: white;
+}
+
+#scrittaGrande{
+  font-size: small;
+}
+
+#scrittaPiccola{
+  font-size: x-small;
+  color: #659eb9;
+  text-decoration: underline;
+}
+
