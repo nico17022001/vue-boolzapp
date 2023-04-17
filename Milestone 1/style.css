@@ -3,3 +3,32 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+#main-wrapper{
+  background: rgb(214,219,212);
+  background: linear-gradient(0deg, rgba(214,219,212,1) 82%, rgba(0,150,136,1) 82%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#containerApp{
+  background-color: aqua;
+  width: 80%;
+  height: 93%;
+  background-color: #f0f0f0;;
+  display: flex;
+}
+
+#leftSide{
+  background-color: blueviolet;
+  width: 35%;
+  height: 100%;
+}
+
+#rightSide{
+  background-color: aquamarine;
+  width: 65%;
+  height: 100%;
+}
