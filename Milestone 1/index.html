@@ -67,18 +67,28 @@
         <!-- LATO DESTRA APP -->
         <div id="rightSide">
           <!-- TOP BAR -->
-          <div class="topBarr">
+          <div class="topBarr border-left" >
             <!-- ICONA E NOME  -->
             <div class="avatarNome">
               <div class="avatar"><img src="img/avatar_io.jpg" alt=""></div>
-              <div class="userName">Sofia</div>
+              <div class="containerNameData">
+                <div class="userName">Sofia</div>
+                <div class="messaggioGrigio">Ultimo accesso oggi alle 12:30</div>
+              </div>
             </div>
             <!--ICONE DI UTILIZZO A DESTRA DEL NOME-->
             <div class="iconTopContainer">
-              <div class="icon"><i class="fa-solid fa-circle-notch"></i></div>
-              <div class="icon"><i class="fa-solid fa-message"></i></div>
+              <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+              <div class="icon"><i class="fa-solid fa-paperclip"></i></div>
               <div class="icon"><i class="fa-solid fa-ellipsis-vertical"></i></div>
             </div>
+          </div>
+          <!-- VISUALIZZAZIONE CHAT -->
+          <div id="main-right"></div>
+          <div id="contenitoreTastiera" class="border-left">
+            <div id="emoticon"><i class="fa-regular fa-face-smile"></i></div>
+            <div id="tastiera"><input type="text" placeholder="Scrivi un messaggio"></div>
+            <div id="audio"><i class="fa-solid fa-microphone"></i></div>
           </div>
         </div>
       </div>

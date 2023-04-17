@@ -161,3 +161,49 @@
 .userName{
   font-size: small;
 }
+
+.border-left{
+  border-left:solid 0.5px lightgray;
+}
+
+#main-right{
+  background-image: url(img/mine.jpg);
+  height: calc(100% - 100px);
+  width: 100%;
+}
+
+#contenitoreTastiera{
+  background-color: #f3eeea;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#emoticon{
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tastiera{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#audio{
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tastiera input{
+  width: 100%;
+  height: 30px;
+}
+
