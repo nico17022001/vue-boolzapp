@@ -32,3 +32,11 @@
   width: 65%;
   height: 100%;
 }
+
+.topBarr{
+  height: 40px;
+  background-color: #eaeaea;
+  display: flex;
+  align-items: center;
+  
+}
