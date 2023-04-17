@@ -51,14 +51,14 @@
             <div id="barraCerca"><input type="text" placeholder="Cerca o inizia una nuova chat"></div>
           </div>
           <!-- LISTA CONTATTI -->
-          <div id="listaContatti">
+          <div id="listaContatti" >
             <!-- CONTATTO -->
-            <div class="contatto">
+            <div class="contatto" v-for="contatto in contacts">
               <!-- AVATAR -->
-              <div class="avatar"><img src="img/avatar_1.jpg" alt=""></div>
+              <div class="avatar"><img :src="contatto.avatar" alt=""></div>
               <!-- CONTENITORE NOME E MESSAGGIO -->
               <div class="userNameContainer">
-                <div class="userName">Michele</div>
+                <div class="userName">{{contatto.name}}</div>
                 <div class="messaggioGrigio">Ultimo messaggio inviato</div>
               </div>
             </div>
