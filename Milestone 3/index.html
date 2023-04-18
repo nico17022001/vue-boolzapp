@@ -6,14 +6,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- FONTAWESOME -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- VUE -->
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <!-- VUE -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   <!-- STYLE -->
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>Boolzapp</title>
 </head>
+
 <body>
-  
+  <div id="app">
+    <div id="main-wrapper">
+      <!-- CONTENITORE APP -->
+      <div id="containerApp">
+        <!-- LATO SINISTRO APP -->
+        <div id="leftSide">
+          <!-- BARRA ALTA  -->
+          <div class="topBarr">
+            <!-- ICONA E NOME  -->
+            <div class="avatarNome">
+              <div class="avatar"><img src="img/avatar_io.jpg" alt=""></div>
+              <div class="userName">Sofia</div>
+            </div>
+            <!--ICONE DI UTILIZZO A DESTRA DEL NOME-->
+            <div class="iconTopContainer">
+              <div class="icon"><i class="fa-solid fa-circle-notch"></i></div>
+              <div class="icon"><i class="fa-solid fa-message"></i></div>
+              <div class="icon"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+            </div>
+          </div>
+
+          <!-- BARRA NOTIFICA BLU -->
+          <div id="newsBarr">
+            <!-- CAMPANELLA -->
+            <div id="bell"><i class="fa-regular fa-bell-slash"></i></div>
+            <!-- SCRITTE AFFIANCO ALLA CAMPANELLA -->
+            <div id="contenitoreScritte">
+              <div id="scrittaGrande">Ricevi notifiche di nuovi messaggi</div>
+              <div id="scrittaPiccola">Attiva notifiche desktop</div>
+            </div>
+          </div>
+
+          <!-- BARRA DI RICERCA  -->
+          <div id="navBarr">
+            <!-- LENTE BARRA -->
+            <div id="lente"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <!-- BARRA RICERCA -->
+            <div id="barraCerca"><input type="text" placeholder="Cerca o inizia una nuova chat"></div>
+          </div>
+
+          <!-- LISTA CONTATTI -->
+          <div id="listaContatti" >
+            <!-- CONTATTO -->
+            <div class="contatto" v-for="(contatto, i) in contacts" @click="selezionaProfilo(i)">
+              <!-- AVATAR -->
+              <div class="avatar"><img :src="contatto.avatar" alt=""></div>
+              <!-- CONTENITORE NOME E MESSAGGIO -->
+              <div class="userNameContainer">
+                <div class="userName">{{contatto.name}}</div>
+                <div class="messaggioGrigio">Ultimo messaggio inviato</div>
+              </div>
+              <div class="oraUltimoMessaggio">12:00</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LATO DESTRA APP -->
+        <div id="rightSide">
+          <!-- TOP BAR -->
+          <div class="topBarr border-left" >
+            <!-- ICONA E NOME  -->
+            <div class="avatarNome" >
+              <div class="avatar"><img :src="contacts[counter].avatar" alt=""></div>
+              <div class="containerNameData">
+                <div class="userName">{{contacts[counter].name}}</div>
+                <div class="messaggioGrigio">Ultimo accesso oggi alle 12:30</div>
+              </div>
+            </div>
+
+            <!--ICONE DI UTILIZZO A DESTRA DEL NOME-->
+            <div class="iconTopContainer">
+              <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+              <div class="icon"><i class="fa-solid fa-paperclip"></i></div>
+              <div class="icon"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+            </div>
+          </div>
+
+          <!-- VISUALIZZAZIONE CHAT -->
+          <div id="main-right">
+              <div class="messaggio" v-for="messaggio in (contacts[counter].messages)" :class="messaggio.status">
+                <span>{{messaggio.message}}</span>
+                <span class="orario">12:30</span>
+              </div>
+          </div>
+          <!-- TASTIERA IN FONDO -->
+          <div id="contenitoreTastiera" class="border-left">
+            <div id="emoticon"><i class="fa-regular fa-face-smile"></i></div>
+            <div id="tastiera"><input type="text" placeholder="Scrivi un messaggio"></div>
+            <div id="audio"><i class="fa-solid fa-microphone"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
