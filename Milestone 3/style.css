@@ -77,8 +77,11 @@
 }
 
 #bell i{
-  background-color: #8edafc;
-  color: white;
+  background-color: white;
+  color: #8edafc;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
 }
 
 #scrittaGrande{
