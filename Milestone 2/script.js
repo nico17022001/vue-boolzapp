@@ -166,7 +166,14 @@ createApp({
             ],
         }
     ],
-    
+    counter: 0
     }
-  }
+    },
+    
+    methods:{
+        selezionaProfilo(i){
+            this.counter = i
+            console.log("ho cliccato la conversazione con indice ",this.counter);
+        }
+    }
 }).mount("#app")

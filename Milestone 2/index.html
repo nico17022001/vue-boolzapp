@@ -57,7 +57,7 @@
           <!-- LISTA CONTATTI -->
           <div id="listaContatti" >
             <!-- CONTATTO -->
-            <div class="contatto" v-for="contatto in contacts">
+            <div class="contatto" v-for="(contatto, i) in contacts" @click="selezionaProfilo(i)">
               <!-- AVATAR -->
               <div class="avatar"><img :src="contatto.avatar" alt=""></div>
               <!-- CONTENITORE NOME E MESSAGGIO -->
@@ -75,10 +75,10 @@
           <!-- TOP BAR -->
           <div class="topBarr border-left" >
             <!-- ICONA E NOME  -->
-            <div class="avatarNome">
-              <div class="avatar"><img src="img/avatar_io.jpg" alt=""></div>
+            <div class="avatarNome" >
+              <div class="avatar"><img :src="contacts[counter].avatar" alt=""></div>
               <div class="containerNameData">
-                <div class="userName">Sofia</div>
+                <div class="userName">{{contacts[counter].name}}</div>
                 <div class="messaggioGrigio">Ultimo accesso oggi alle 12:30</div>
               </div>
             </div>
@@ -94,10 +94,10 @@
           <!-- VISUALIZZAZIONE CHAT -->
           <div id="main-right">
               <div class="messaggioInviato">
-                <span class="inviato">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolor maxime, soluta explicabo nam sapiente, odit praesentium sint pariatur mollitia dolores quod, alias doloremque dignissimos eius vel eveniet nostrum beatae!</span>
+                
               </div>
               <div class="messaggioRicevuto">
-                <span class="ricevuto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque enim sequi dolorum facilis minus vel dolorem exercitationem sunt reprehenderit blanditiis quis odit quia aliquid, fuga, nisi amet ipsa repudiandae! Quos.</span>
+                
               </div>
           </div>
           <!-- TASTIERA IN FONDO -->
