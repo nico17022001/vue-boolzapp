@@ -101,7 +101,7 @@
           <!-- TASTIERA IN FONDO -->
           <div id="contenitoreTastiera" class="border-left">
             <div id="emoticon"><i class="fa-regular fa-face-smile"></i></div>
-            <div id="tastiera"><input type="text" placeholder="Scrivi un messaggio"></div>
+            <div id="tastiera"><input @keyup.enter="invia" v-model="messaggioDaInviare" type="text" placeholder="Scrivi un messaggio"></div>
             <div id="audio"><i class="fa-solid fa-microphone"></i></div>
           </div>
         </div>

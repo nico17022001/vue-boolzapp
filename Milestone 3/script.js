@@ -166,7 +166,8 @@ createApp({
             ],
         }
     ],
-    counter: 0
+    counter: 0,
+    messaggioDaInviare:'',
     }
     },
     
@@ -174,6 +175,27 @@ createApp({
         selezionaProfilo(i){
             this.counter = i
             console.log("ho cliccato la conversazione con indice ",this.counter);
+        },
+        invia(){
+            const nuovoMessaggio = {
+                message:this.messaggioDaInviare,
+                status: "sent"
+                //todoo:Prendere ora esatta da luxon                
+            }
+            this.contacts[this.counter].messages.push(nuovoMessaggio),
+            this.messaggioDaInviare = ""
+            this.risponde()
+            console.log(this.messaggioDaInviare)
+        },
+        risponde(){
+            setTimeout(() => {
+                const risposta = {
+                    message:"ciao",
+                    status:"received"
+                } 
+                this.contacts[this.counter].messages.push(risposta);
+            }, 1000)
+            
         }
     }
 }).mount("#app")
