@@ -3,3 +3,255 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+#main-wrapper{
+  background: rgb(214,219,212);
+  background: linear-gradient(0deg, rgba(214,219,212,1) 82%, rgba(0,150,136,1) 82%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#containerApp{
+  background-color: aqua;
+  width: 80%;
+  height: 93%;
+  background-color: #f0f0f0;;
+  display: flex;
+}
+
+#leftSide{
+  background-color: blueviolet;
+  width: 35%;
+  height: 100%;
+}
+
+#rightSide{
+  background-color: aquamarine;
+  width: 65%;
+  height: 100%;
+}
+
+.topBarr{
+  height: 50px;
+  background-color: #eaeaea;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  position: relative;
+}
+
+.avatarNome{
+  display: flex;
+  align-items: center;
+}
+
+.avatar img{
+  width: 30px;
+  border-radius: 50%;
+}
+
+.iconTopContainer{
+  display: flex;
+  position: absolute;
+  right: 5px;
+}
+
+.icon{
+  margin: 0px 4px 0px 4px;
+  color: #b1b1b1;
+  cursor: pointer;
+}
+
+.icon:hover{
+  color: black;
+}
+
+#newsBarr{
+  background-color: #8edafc;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+#bell i{
+  background-color: white;
+  color: #8edafc;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+#scrittaGrande{
+  font-size: small;
+}
+
+#scrittaPiccola{
+  font-size: x-small;
+  color: #659eb9;
+  text-decoration: underline;
+}
+
+#navBarr{
+  background-color: #fafafa;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+
+#lente{
+  background-color: #fff;
+  border: solid 0.5px lightgray;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0px 5px 0px;
+  height: 20px;
+  cursor: pointer;
+  color: gray;
+  font-size: x-small;
+}
+
+#barraCerca {
+  width: 100%;
+}
+
+#barraCerca input{
+  width: 100%;
+  height: 20.5px;
+  border: solid 0.5px lightgray;
+  font-size: x-small;
+  padding-left: 5px;
+}
+
+#listaContatti{
+  background-color: white;
+  height: calc(100% - 140px);
+  width: 100%;
+  overflow: scroll;
+}
+
+.avatar{
+  padding-left: 5px;
+}
+
+.contatto{
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.userNameContainer{
+  padding-left: 10px;
+}
+
+.contatto{
+  display: flex;
+  position: relative;
+}
+
+.messaggioGrigio{
+  color: gray;
+  font-size: x-small;
+}
+
+.contatto:hover{
+  background-color: #e9ebeb;
+}
+
+.userName{
+  font-size: small;
+}
+
+.border-left{
+  border-left:solid 0.5px lightgray;
+}
+
+#main-right{
+  background-image: url(img/mine.jpg);
+  height: calc(100% - 100px);
+  width: 100%;
+  overflow: scroll;
+  padding: 20px 30px 0px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+#contenitoreTastiera{
+  background-color: #f3eeea;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#emoticon{
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tastiera{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#audio{
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tastiera input{
+  width: 100%;
+  height: 30px;
+  border: none;
+  padding-left: 10px;
+}
+
+.oraUltimoMessaggio{
+  font-size: small;
+  color: gray;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.messaggio{
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 70%;
+  display: flex;
+  margin-bottom: 10px;
+  min-width: 15%;
+}
+
+.sent{
+  background-color: #d5f9ba;
+  border-radius: 10px;
+  align-self: flex-end;
+}
+
+.received{
+  background-color: white;
+  align-self: flex-start;
+  border-radius: 10px;
+}
+
+.orario{
+  color: gray;
+  font-size: x-small;
+  margin-left: 30px;
+  display: flex;
+  align-items: flex-end;
+}
